@@ -74,6 +74,7 @@ func EmpCreate(w http.ResponseWriter, r *http.Request) {
 
 }
 
+//get all the records
 func Get(w http.ResponseWriter, r *http.Request) {
 	var empList []Emp
 
