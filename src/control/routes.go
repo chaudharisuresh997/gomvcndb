@@ -76,6 +76,7 @@ func EmpCreate(w http.ResponseWriter, r *http.Request) {
 
 func Get(w http.ResponseWriter, r *http.Request) {
 	var empList []Emp
+
 	m := map[string]interface{}{}
 	type AllEmpsResponse struct {
 		Emps []Emp `json:"messages"`
