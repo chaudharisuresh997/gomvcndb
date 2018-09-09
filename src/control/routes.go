@@ -80,6 +80,7 @@ func Get(w http.ResponseWriter, r *http.Request) {
 	type AllEmpsResponse struct {
 		Emps []Emp `json:"messages"`
 	}
+	//create query
 	query1 := "SELECT name FROM shivapreals.emptable"
 	var ses = GetSession()
 	defer ses.Close()
